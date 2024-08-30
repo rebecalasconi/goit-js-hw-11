@@ -1,0 +1,63 @@
+#loadMoreBtn:disabled {
+    background-color: #c1c1c1;
+    cursor: not-allowed;
+}
+
+#loadMoreBtn.hidden {
+    display: none;
+}
+
+#loadMoreBtn {
+    position: absolute;
+    bottom: -40px;
+    display: block;
+    left: 50%;
+    right: 40%;
+
+}
+
+input,
+#loadMoreBtn {
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"],
+#loadMoreBtn {
+    border: none;
+    background-color: rgba(45, 45, 233, 0.731);
+    color: white;
+    cursor: pointer;
+}
+
+
+.photo-card {
+    margin: 20px;
+    max-width: 270px;
+    box-shadow: 11px 10px 5px -8px rgba(168,158,168,1);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+img {
+    max-width: 270px;
+}
+
+.info {
+    display: flex;
+    font-size: 13px;
+    gap: 12px;
+    margin: 0 10px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
