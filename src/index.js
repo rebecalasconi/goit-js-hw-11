@@ -55,8 +55,9 @@ async function getData(event) {
         return;
 
     } else {
-    Notiflix.Notify.success(`Hooray! We found ${response.data.totalHits} images.
+    Notiflix.Notify.success(`Hooray! We found ${response.data.totalHits} images of ${searchElement.value}.
         Showing ${data.length} images`);
+        searchElement.value= '';
     data.forEach(element => {
         let div = document.createElement('div')
         div.innerHTML = `
